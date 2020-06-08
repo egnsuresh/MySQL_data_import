@@ -7,9 +7,9 @@ if you get timeout error / memory limit or similar problems, we should try follo
 * To check allowed limit:
   * in bytes```SELECT @@max_allowed_packet;```
   * in kb ```SELECT @@max_allowed_packet / 1024;```
-* to set buffer size and packet size as 200MB
-  *```SET GLOBAL net_buffer_length=2000000;```
-  *```SET GLOBAL max_allowed_packet=2000000000```
+* To set buffer size and packet size as 200MB
+  * ```SET GLOBAL net_buffer_length=2000000;```
+  * ```SET GLOBAL max_allowed_packet=2000000000```
 ### Permanent Fix
 * open my.cnf file (it should available in installtion folder
 * find the section with following name ```[mysqld]```
