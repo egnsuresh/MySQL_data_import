@@ -16,6 +16,6 @@ if you get timeout error / memory limit or similar problems, we should try follo
   * ```SET GLOBAL net_buffer_length=2000000;```
   * ```SET GLOBAL max_allowed_packet=2000000000```
 ### Permanent Fix
-* open my.cnf file (it should available in installtion folder
+* open my.cnf file (it should available in installtion folder)
 * find the section with following name ```[mysqld]```
 * add following line in that section ```max_allowed_packet      = 200M```
